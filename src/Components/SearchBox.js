@@ -1,9 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
+import tachyons from "tachyons";
 
-class SearchBox extends Component {
-  render() {
-    return <div></div>;
-  }
-}
+const SearchBox = ({ classfield, searchChange }) => {
+  return (
+    <div>
+      <input
+        type="search"
+        placeholder="search robots"
+        className="pa3 ba b--green bg-lightest-blue"
+        onChange={searchChange}
+      />
+    </div>
+  );
+};
 
 export default SearchBox;
